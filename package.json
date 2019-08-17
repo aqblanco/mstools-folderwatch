@@ -1,0 +1,25 @@
+{
+  "name": "mstool-folderwatch",
+  "version": "1.0.0",
+  "description": "Watches for new files added to folders and write them into a file",
+  "main": "folderwatch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "folderwatcher": "folderwatch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aqblanco/mstools-folderwatch.git"
+  },
+  "author": "Aquilino Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aqblanco/mstools-folderwatch/issues"
+  },
+  "homepage": "https://github.com/aqblanco/mstools-folderwatch#readme",
+  "dependencies": {
+    "chokidar": "^3.0.2"
+  }
+}
