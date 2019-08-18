@@ -4,7 +4,7 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const path = require('path');
 
-const listFile = '/var/log/mstools/finishedList.json';
+const listFile = '../logs/finishedList.json';
 const configFile = 'config/config.json';
 let watchedFolders = '';
 
@@ -42,6 +42,10 @@ if (watchedFolders != '') {
 
         let data = JSON.stringify(files, null, 2);
 
+        // Create dir path if not exists
+        if (!fs.existsSync(listFile)) {
+            fs.mkdirSync(path.dirname(listFile));
+        }
         fs.writeFileSync(listFile, data);
     });
 } else {
