@@ -4,7 +4,7 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const path = require('path');
 
-const listFile = 'finishedList.json';
+const listFile = '/var/log/mstools/finishedList.json';
 const configFile = 'config/config.json';
 let watchedFolders = '';
 
